@@ -1,0 +1,23 @@
+def maior_indice_lista(lista1,direct):
+   list2=lista1
+   resposta=0
+   if direct==True:
+      for i in range(len(list2)):
+         contador=0
+         for t in range(len(list2)):
+             if list2[i]>=list2[t]:
+                 contador+=1
+         if contador==len(list2):
+          resposta=i
+               
+   else:
+       if direct == True:
+           for i in range(len(list2)):
+               contador = 0
+               for t in range(len(list2)):
+                   if list2[i] <= list2[t]:
+                       contador += 1
+               if contador == len(list2):
+                   resposta = i
+
+   return  resposta
